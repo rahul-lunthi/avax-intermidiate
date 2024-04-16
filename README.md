@@ -12,5 +12,7 @@ The Solidity Error Handling Example includes a set of functions designed to show
 
 These functionalities are crucial for maintaining the integrity and security of a smart contract on the Ethereum blockchain.
 
+License
 
+This project is licensed under the MIT License 
 
