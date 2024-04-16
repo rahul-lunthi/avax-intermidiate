@@ -1,0 +1,37 @@
+//SPDX-License-Identifier:MIT
+pragma solidity ^0.8.0;
+contract errors
+{
+    uint public b = 10;
+    function e1(uint a) public pure returns(uint)
+    {
+        require(a>10,"please input greater than 10");
+        return a*2;
+    }
+    function e2(uint a) public returns(uint)
+    {
+        b = b * 2;
+        if(a>10)
+        {
+        revert("invalid input");
+        }
+        return b;
+    }
+    function e3(uint a) public returns(string memory)
+    {
+        b=b*b;
+        assert(a==0);
+        return ("match found");
+    }
+   error UserDefError(uint256 z,string message);
+
+
+    function myError(uint256 a) public view {
+        uint256 var1 = block.gaslimit;
+        if (var1 > a) {
+            revert UserDefError(a,"gas limit exceeeded");
+        }
+    }
+
+
+}
