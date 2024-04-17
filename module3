@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract ERC20Token {
-    string public name;
+    string public name;ff
     string public symbol;
     uint8 public decimals;
     address public owner;
