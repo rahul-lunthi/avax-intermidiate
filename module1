@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ErrorHandling {
+contract ErrorHandling { 
     uint public currentMultiplier = 10;
     
     function doubleIfGreaterThanTen(uint number) public pure returns(uint) {
@@ -23,12 +23,5 @@ contract ErrorHandling {
         return "Input matches zero";
     }
     
-    error CustomError(uint256 providedValue, string message);
     
-    function checkGasLimit(uint256 threshold) public view {
-        uint256 currentGasLimit = block.gaslimit;
-        if (currentGasLimit > threshold) {
-            revert CustomError(threshold, "Current gas limit exceeds threshold");
-        }
-    }
 }
