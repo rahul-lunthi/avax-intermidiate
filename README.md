@@ -12,7 +12,8 @@ The Solidity Error Handling Example includes a set of functions designed to show
 
 These functionalities are crucial for maintaining the integrity and security of a smart contract on the Ethereum blockchain.
 
-License
+# License
 
-This project is licensed under the MIT License 
-
+This contract is provided under the MIT License (SPDX-License-Identifier: MIT), which allows for the use, modification, and distribution of the code with certain restrictions. Users of this contract should review and comply with the terms of the MIT License.
+ For any queries :
+ rahullunthi99@gmail.com
